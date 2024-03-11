@@ -9,11 +9,9 @@ public class Scanner01 {
 		
 		System.out.print("정수 타입 숫자를 입력하세요 : ");
 		int a = input.nextInt();
-        System.out.println(a);
 		
 		System.out.print("실수 타입 숫자를 입력하세요 : ");
         double b = input.nextDouble();
-        System.out.println(b);
         
 //        System.out.println(a - b);
 //        System.out.println(a * b);
