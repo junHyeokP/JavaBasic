@@ -10,7 +10,6 @@ public class Scanner02 {
 		
 		System.out.print("원의 반지름을 입력하세요.(cm) : ");
 		int r = input.nextInt();
-		System.out.println(r);
 		
 		System.out.println("원의 넓이는 " + (r * r * PI) + "cm입니다." );
 	}
