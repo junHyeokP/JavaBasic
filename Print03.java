@@ -6,7 +6,7 @@ public class Print03 {
 		String myName = "박준혁";
 		int myAge = 24;
 		
-		System.out.println("* 이름 :\t" + myName + "\n* 나이 :\t\"24\"");
+		System.out.println("* 이름 :\t" + myName + "\n* 나이 :\t\"" + myAge + "\"");
 
 	}
 
