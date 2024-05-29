@@ -39,7 +39,7 @@ public class CharStreamExample { //문자 스트림, 2바이트 단위의 문자
 		int charData; // 문자 데이터를 받을 변수 생성
 		while ((charData = fr.read()) != -1) { // 파일에서 문자 데이터 받기, 파일에서 받을 데이터가 없을 때 까지
 			System.out.print((char)charData); // char 타입의 문자 데이터를 출력하기
-			fw.write(charData); // 문자 데이터 출력
+			fw.write(charData); // 버퍼링
 		}
 	}
 
