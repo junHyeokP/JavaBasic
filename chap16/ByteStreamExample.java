@@ -28,7 +28,7 @@ public class ByteStreamExample { // 바이트 스트림, 1바이트 단위의 �
 	private static void copyEachOneByte(FileInputStream fis, FileOutputStream fos) throws IOException { // 예외 처리 오류 던지기(떠넘기기), 특정 오류를 명시적으로 발생시켜서 무시해버림,던져버린 예외 처리 오류는 그대로 상위 코드가 처리하도록 떠넘겨버림 
 		int byteInput; //바이트를 받는 변수 생성 
 		while ((byteInput = fis.read()) != -1) { // 인스턴스 객체 fis에서 read 메서드 호출,read()는 int 타입을 반환하며, ASCII코드 값으로 표현한다고 함, 더이상 읽을 데이터가 없으면 -1 반환, 파일에서 불러들일 데이터가 없을 때까지 바이트 전달
-			fos.write(byteInput); // 인스턴스 객체 fos에서 호출하는 출력 메서드, write()는 대부분의 운영체제나 JVM에서 표준 출력 장치를 효율적으로 관리하기 위해 버퍼를 사용한다고함. (버퍼를 비우기 위하여 flush 메서드 호출 필요)
+			fos.write(byteInput); // 인스턴스 객체 fos에서 호출하는 버퍼 메서드, 대부분의 운영체제나 JVM에서 표준 출력 장치를 효율적으로 관리하기 위해 버퍼를 사용한다고함. (버퍼를 비우기 위하여 flush 메서드 호출 필요)
 		}
 	}
 	
